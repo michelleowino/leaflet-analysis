@@ -17,7 +17,7 @@ d3.json('https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/1.0_week.geoj
 
     features.forEach((
         {
-            properties: { mag, place, time },
+            properties: { mag, place},
             geometry: { coordinates: [lon, lat, depth] }
         }) => {
         L.circleMarker([lat, lon],
@@ -29,7 +29,7 @@ d3.json('https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/1.0_week.geoj
                 color: 'black',
                 weight: 1
             })
-            .bindPopup(`<b>Magnitude:</b> ${mag}<br><b>Location:</b> ${place}<br><b>Date:</b> ${new Date(time).toLocaleString()}`)
+            .bindPopup(`<b>Magnitude:</b> ${mag}<br><b>Location:</b> ${place}<br><b>Depth:</b> ${depth} km`)
     .addTo(map);
     });
 

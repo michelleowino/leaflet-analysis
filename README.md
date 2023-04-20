@@ -4,8 +4,8 @@ The United States Geological Survey, or USGS for short, is responsible for provi
 I've used HTML, JavaScript and CSS to develop a way to visualize USGS data. Code can be found in the Leaflet-Part-1 folder. 
 
 ## Steps Taken: 
-1. Obtain dataset: 
-- I selected  "All Earthquakes from the Past 7 Days - M1.0+ Earthquakes." 
+    1. Obtain dataset: 
+      - I selected  "All Earthquakes from the Past 7 Days - M1.0+ Earthquakes." 
 - Then used the URL of this JSON to pull in the data for the visualization.
 
 2. Import and visualize the data: 
